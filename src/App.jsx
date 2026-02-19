@@ -1,18 +1,26 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
 
 function App() {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-dark">
-            <div className="text-center">
-                <h1 className="text-5xl font-outfit font-bold text-gradient mb-4">
-                    Romit Gupta
-                </h1>
-                <p className="text-slate-400 text-xl">
-                    Portfolio Project Initialized
-                </p>
-            </div>
+        <div className="bg-dark selection:bg-primary/30 text-slate-200">
+            <Navbar />
+            <main>
+                <Hero />
+                <About />
+                <Experience />
+                <Projects />
+                <Skills />
+                <Contact />
+            </main>
         </div>
-    )
+    );
 }
 
-export default App
+export default App;
